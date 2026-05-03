@@ -6,7 +6,7 @@ The app provides real-time predictions, confidence scores, and detailed diagnost
 
 ---
 
-## 📲 Download App
+## 📲 Download App (Only for Android as of now)
 
 [![Download APK](https://img.shields.io/badge/Download-APK-blue?style=for-the-badge&logo=android)](https://github.com/Codeboy-710/brain-tumor-detector/releases/download/v1.0/app-release.apk)
 
