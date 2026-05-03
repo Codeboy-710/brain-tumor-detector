@@ -59,7 +59,7 @@ The app provides real-time predictions, confidence scores, and detailed diagnost
 
 ## 📁 ML Implementation Details
 
-The complete machine learning pipeline, including model training, preprocessing, and experimentation with multiple architectures, is available in the [`ml/`](./ML codes) folder.
+The complete machine learning pipeline, including model training, preprocessing, and experimentation with multiple architectures, is available in the [`ML codes/`](./ML codes) folder.
 
 👉 Refer to the dedicated README inside the `ML codes/` directory for detailed information about:
 - Model training process
