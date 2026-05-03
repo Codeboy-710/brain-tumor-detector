@@ -38,7 +38,7 @@ You can download it from:
 
 ---
 
-## 🏋️ Training
+## 🏋️ Training & Testing
 
 To train the model:
 
