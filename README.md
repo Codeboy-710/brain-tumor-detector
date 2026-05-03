@@ -34,6 +34,16 @@ The app provides real-time predictions, confidence scores, and detailed diagnost
 
 ---
 
+<p align="center">
+  <img src="screenshots/starting2.jpg" width="250"/>
+  <img src="screenshots/home.jpg" width="250"/>
+  <img src="screenshots/analysing.jpg" width="250"/>
+  <img src="screenshots/Result.jpg" width="250"/>
+  <img src="screenshots/Report.jpg" width="250"/>
+</p>
+
+---
+
 ## 🧠 Tech Stack
 
 - **Frontend:** Flutter (Dart)
