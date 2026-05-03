@@ -42,16 +42,16 @@ You can download it from:
 
 To train the model:
 
-```bash
-  use the python codes of the respective model you want to use.
-  Debug and run it step by step and complete the test, train & graph processes 
+
+  - use the python codes of the respective model you want to use.
+  - Debug and run it step by step and complete the test, train & graph processes 
 
 
 
   📦 Model Export
-
+ 
   After training, the model is converted to TensorFlow Lite format:
-  '''bash
+
   - model.tflite
 
   This file is used inside the Flutter application.
