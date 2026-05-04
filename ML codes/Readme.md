@@ -8,10 +8,13 @@ This folder contains the machine learning pipeline used to train the brain tumor
 
 - **Task:** Multi-class Brain Tumor Classification
 - **Architectures Explored:**
+   <br>
+   -Image preprocessing (resizing, normalization)    
+  -Model training using CNN architectures:
   - DenseNet (primary model used in deployment)
   - EfficientNet
   - MobileNet
-  - U-Net (used for segmentation experiments)
+  - U-Net (segmentation experiments)
 
 - **Final Deployed Model:** DenseNet-based CNN (converted to TensorFlow Lite)  
 
@@ -149,6 +152,11 @@ The trained model is converted into TensorFlow Lite format for mobile deployment
 ```bash
 model.tflite
 ```
+(P.S:- It can be from any respective model whichever gives highest accuracy)  
+
+
+
+
 This file is used inside the Flutter application for on-device inference.
 <br><br>
 ## 6️⃣:- **Use in Flutter App**  
