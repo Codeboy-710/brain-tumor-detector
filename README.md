@@ -59,25 +59,11 @@ The app provides real-time predictions, confidence scores, and detailed diagnost
 
 ---
 
-## 🧠 ML Pipeline
+## 🧠 ML Pipeline / 📁 Implementation Details
 
-- Image preprocessing (resizing, normalization)
-- Model training using CNN architectures:
-  - DenseNet (final deployed model)
-  - EfficientNet
-  - MobileNet
-  - U-Net (segmentation experiments)
-- Conversion to `.tflite` for mobile deployment
+The complete machine learning pipeline, including model training, preprocessing, and experimentation with multiple architectures, is available in the [ML codes/](./ML%20codes/) folder.
 
-## 📁 ML Implementation Details
-
-The complete machine learning pipeline, including model training, preprocessing, and experimentation with multiple architectures, is available in the [`ML codes/`](./ML codes) folder.
-
-👉 Refer to the dedicated README inside the `ML codes/` directory for detailed information about:
-- Model training process
-- Dataset usage
-- Architecture experiments
-- Model export to TensorFlow Lite
+⚠️ Note: Please go through the README.md inside the ([ML codes/](./ML%20codes/)) directory for complete details of the ML pipeline and implementation. This contains important information about training, datasets, and model export.
 
 ---
 
