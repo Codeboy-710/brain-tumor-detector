@@ -30,7 +30,7 @@ The app provides real-time predictions, confidence scores, and detailed diagnost
 - 📷 Upload MRI via Camera / Gallery
 - ⚡ Fast on-device inference (works offline)
 - 🌙 Dark mode support
-- 🎯 Clean and responsive UI
+- 🎯 Clean and responsive Flutter UI
 
 ---
 
@@ -83,8 +83,106 @@ The complete machine learning pipeline, including model training, preprocessing,
 
 ## ⚙️ Setup (For Developers)
 
+### 1. Clone the repository
 ```bash
 git clone https://github.com/YOUR_USERNAME/brain-tumor-detector.git
 cd brain-tumor-detector
+
+```
+### 2. Install dependencies
+```bash
+flutter pub get
+
+```
+### 3. Android setup (only first time)  
+-Make sure Android SDK is installed and configured.  
+If not, follow official guide:
+https://flutter.dev/docs/get-started/install  
+Then run :
+```bash
+flutter doctor --android-licenses  
+```
+Accept all licenses  
+⚠️Imp:- Make sure Android SDK is properly installed before running the app for the first time.
+
+### 4. 📱Running on Physical Device
+To run the app on a real Android device:
+
+### A) **_Enable Developer Options_**
+- Go to Settings → About Phone
+- Tap "Build Number" 7 times
+
+### B) **_Enable USB Debugging_**
+- Go to Settings → Developer Options
+- Enable "USB Debugging"
+
+### C) **_Connect Device_**
+- Connect your phone via USB cable
+- Allow USB debugging permission when prompted
+- Allow install via USB
+
+### D) **_Verify connection_**
+   ⚠️Note:- Ensure your device is in "File Transfer (MTP)" mode if the device is not detected.  
+
+### 5. Run the App
+```bash
+flutter run
+```
+
+
+
+## 🛠️ Troubleshooting
+
+### ❌ 1. "Flutter doctor shows Android SDK issues"
+**Problem:** Android toolchain is not configured properly.  
+**Fix:**
+```bash
+flutter doctor --android-licenses
+```
+### ❌ 2. "sdkmanager not found"
+**Problem:**: Android SDK cmdline-tools not set correctly.
+
+Fix:  
+Ensure this path exists:
+ Android/Sdk/cmdline-tools/latest/bin  
+Then Run:
+```bash
+.\sdkmanager --version
+```
+
+### ❌ 3. "No connected devices found"
+
+Problem: Device not detected by Flutter.
+
+Fix:  
+- Enable USB Debugging on phone    
+- Use "File Transfer (MTP)" mode  
+Run:
+```bash
+flutter devices
+```
+
+### ❌ 4. App builds but crashes on launch
+
+Problem: Missing assets or model file.
+
+Fix:  
+- Check pubspec.yaml assets section  
+- Ensure .tflite model is included correctly  
+
+### ❌ 5. Gradle build fails
+
+Problem: Dependency or SDK mismatch.  
+Fix:
+```bash
+flutter clean
 flutter pub get
 flutter run
+```
+### ❌ 6. Emulator is slow / not starting
+
+Fix:  
+- Enable virtualization (BIOS)  
+- Use physical device instead (recommended for ML apps)
+
+
