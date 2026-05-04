@@ -171,4 +171,9 @@ Fix:
 - Enable virtualization (BIOS)  
 - Use physical device instead (recommended for ML apps)
 
+---
+## 👨‍💻 Developed by:
+**Gourav Adhikary**  
+*Full-Stack MERN Developer*  
+*(ML | DL | GenAI enthusiast)*
 
